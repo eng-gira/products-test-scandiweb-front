@@ -4,7 +4,7 @@
       <h1 class="text-2xl">Product List</h1>
       <div class="space-x-3">
         <button class="rounded-lg p-2 border border-black text-sm">ADD</button>
-        <button class="rounded-lg p-2 border border-black text-sm">MASS DELETE</button>
+        <button class="rounded-lg p-2 border border-black text-sm" id="delete-product-btn">MASS DELETE</button>
       </div>
     </div>
     <hr />
