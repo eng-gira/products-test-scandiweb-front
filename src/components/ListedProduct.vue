@@ -1,7 +1,7 @@
 <template>
     <div v-if="product !== null" class="border border-black p-4 flex flex-col min-w-[250px] max-w-[250px] min-h-[200px] max-h-[200px] space-y-3">
         <div class="self-start">
-            <input class="delete-checkbox" type="checkbox"/>
+            <input class="delete-checkbox" type="checkbox" :value="product.id"/>
         </div>
         <div class="self-center">
             <h1>{{ product.sku }}</h1>
