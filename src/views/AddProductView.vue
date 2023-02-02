@@ -3,8 +3,8 @@
         <div class="flex justify-between mb-2 items-center">
             <h1 class="text-2xl">Add Product</h1>
             <div class="flex space-x-2">
-                <button class="p-2 border border-black text-sm" @click="submitForm">Save</button>
-                <router-link :to="{name: 'ProductsView'}" class="p-2 border border-black text-sm">Cancel</router-link>
+                <button class="p-2 border border-black text-sm hover:bg-black hover:text-white" @click="submitForm">Save</button>
+                <router-link :to="{name: 'ProductsView'}" class="p-2 border border-black text-sm hover:bg-gray-400 hover:text-white">Cancel</router-link>
             </div>
         </div>
         <hr />

@@ -3,13 +3,16 @@
     <div class="flex justify-between mb-2 items-center">
       <h1 class="text-2xl">Product List</h1>
       <div class="space-x-3">
-        <router-link :to="{name: 'AddProductView'}" class="p-2 border border-black text-sm">ADD</router-link>
-        <button class="p-2 border border-black text-sm" id="delete-product-btn" @click="massDelete">MASS DELETE</button>
+        <router-link :to="{name: 'AddProductView'}" class="p-2 border border-black text-sm hover:text-white hover:bg-black">ADD</router-link>
+        <button class="p-2 border border-black text-sm hover:text-white hover:bg-red-500" id="delete-product-btn" @click="massDelete">MASS DELETE</button>
       </div>
     </div>
     <hr />
-    <div class="mt-3 flex gap-3 flex-wrap p-2 items-center justify-center">
+    <div v-if="products.length > 0" class="mt-3 flex gap-3 flex-wrap p-2 items-center justify-center">
       <ListedProduct v-for="product in products" :key="product.id" :product="product" />
+    </div>
+    <div v-else class="my-8 flex items-center justify-center">
+      <h1 class="italic">No products yet. Start adding products to show up here!</h1>
     </div>
   </div>
 </template>
