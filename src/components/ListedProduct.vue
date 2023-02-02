@@ -22,13 +22,13 @@ const props = defineProps({
 
 function displayTypeData(productType) {
     if(productType.toLowerCase() == 'book') {
-        return 'Weight:' + props.product.weight + 'KG' 
+        return 'Weight: ' + props.product.weight + 'KG' 
     }
     else if(productType.toLowerCase() == 'dvd') {
-        return 'Size:' + props.product.size + ' MB'
+        return 'Size: ' + props.product.size + ' MB'
     }
     else if(productType.toLowerCase() == 'furniture') {
-        return props.product.h + 'X' + props.product.w + 'X' + props.product.l
+        return props.product.height + 'X' + props.product.width + 'X' + props.product.length
     }
 }
 </script>
