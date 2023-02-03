@@ -88,8 +88,8 @@ function submitForm() {
 
 function attributeInputted(attrName, attrValue) {
     // console.log('attribute inputted (name, value):', attrName, attrValue)
-
-    attrs.value[attrName.toLowerCase()] = attrValue
+    if(attrName.length > 0 && attrValue.length > 0)
+        attrs.value[attrName.toLowerCase()] = attrValue
 }
 
 function validateForm() {
