@@ -81,7 +81,8 @@ function submitForm() {
             error.value = 'Failed to save product. API response: ' + resp.data.data
         }
     }).catch((err) => {
-        error.value = 'Failed to save product. API response: ' + err
+        console.log(err)
+        error.value = 'Failed to save product. API response: ' + err.response.data.data
     })
 }
 
