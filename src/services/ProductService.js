@@ -2,7 +2,7 @@ import axios from 'axios'
 
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost/products-test-scandiweb-back/api/products/',
+    baseURL: 'http://206.189.196.40/products-test-scandiweb-back/api/products/',
     withCredentials: false,
 })
 
